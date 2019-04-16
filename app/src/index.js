@@ -8,6 +8,7 @@ import App from './App.jsx';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
+window.IMAGE_URL = 'https://image.tmdb.org/t/p/original/';
 window.API_URL = 'http://localhost:5150/';
 
 ReactDOM.render(

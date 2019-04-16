@@ -3,7 +3,7 @@ const schema = {
     isError: false,
     totalResults: 0,
     totalPages: 0,
-    results: []
+    result: []
 };
 
 export default (state = schema, action) => {
@@ -26,7 +26,7 @@ export default (state = schema, action) => {
                 ...state,
                 isLoading: false,
                 isError: false,
-                results: action.payload.results,
+                result: action.payload.result,
                 totalPages: +action.payload.totalPages,
                 totalResults: +action.payload.totalResults,
             };

@@ -1,5 +1,6 @@
 
 const UPCOMING_URL = 'api/v1/movies/upcoming';
+const SEARCH_URL = 'api/v1/movies';
 
 class UpcomingService {
     get() {
@@ -8,10 +9,31 @@ class UpcomingService {
                 method: 'GET',
             }).then((res) => {
                 if(!res.ok){
-                    reject({
-                        status: res.status,
-                        statusText: res.statusText
-                    });
+                    reject();
+                    return;
+                }
+
+                res.json().then((data) => {
+                    if(!data){
+                        reject();
+                        return;
+                    }
+                    resolve(data);
+                });
+
+            }, (err) => {
+                reject(err);
+            });
+        });
+    }
+
+    search(title = '') {
+        return new Promise((resolve, reject) => {
+            fetch(`${window.API_URL}${SEARCH_URL}?query=${title}`, {
+                method: 'GET',
+            }).then((res) => {
+                if(!res.ok){
+                    reject();
                     return;
                 }
 
