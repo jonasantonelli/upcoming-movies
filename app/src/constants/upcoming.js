@@ -1,0 +1,3 @@
+export const FETCHING = 'UPCOMING:FETCHING';
+export const ERROR = 'UPCOMING:ERROR';
+export const FETCH_COMPLETE = 'UPCOMING:FETCH_COMPLETE';

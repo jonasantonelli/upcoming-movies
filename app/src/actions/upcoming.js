@@ -1,18 +1,19 @@
+import { FETCHING, ERROR, FETCH_COMPLETE }  from '../constants/upcoming';
 import UpcomingService from '../api/Upcoming';
 
 const Upcoming = new UpcomingService();
 
 export const fetching = ({
-    type: 'UPCOMING:FETCHING'
+    type: FETCHING
 });
 
 const error = ({
-    type: 'UPCOMING:ERROR'
+    type: ERROR
 });
 
 const fetchComplete = (data) => {
     return {
-        type: 'UPCOMING:FETCH_COMPLETE',
+        type: FETCH_COMPLETE,
         payload: data
     }
 };

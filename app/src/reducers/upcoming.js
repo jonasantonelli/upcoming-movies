@@ -1,3 +1,5 @@
+import { FETCHING, ERROR, FETCH_COMPLETE }  from '../constants/upcoming';
+
 const schema = {
     isLoading: false,
     isError: false,
@@ -8,20 +10,20 @@ const schema = {
 
 export default (state = schema, action) => {
     switch (action.type) {
-        case 'UPCOMING:FETCHING':
+        case FETCHING:
             return {
                 ...state,
                 isLoading: true
             };
 
-        case 'UPCOMING:ERROR':
+        case ERROR:
             return {
                 ...state,
                 isError: true,
                 isLoading: false
             };
 
-        case 'UPCOMING:FETCH_COMPLETE':
+        case FETCH_COMPLETE:
             return {
                 ...state,
                 isLoading: false,

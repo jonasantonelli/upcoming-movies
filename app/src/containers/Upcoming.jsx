@@ -22,14 +22,14 @@ function debounced(fn, delay) {
 class Upcoming extends React.Component {
     constructor(props) {
         super(props);
-        this.handleSearch = debounced(this.handleSearch.bind(this), 300);
+        this.handleSearchChange = debounced(this.handleSearchChange.bind(this), 200);
     }
 
     componentDidMount() {
         this.props.fetching();
     }
 
-    handleSearch(text) {
+    handleSearchChange(text) {
         if(!text) {
             return;
         }
@@ -42,7 +42,10 @@ class Upcoming extends React.Component {
 
         return (
             <div className="upcoming">
-                <Search onChange={(e) => this.handleSearch(e.target.value)} />
+                <Search
+                    onChange={(e) => this.handleSearchChange(e.target.value)}
+                    onCleaning={() => this.props.fetching()}
+                />
                 <UpcomingList data={result} />
                 {/*Pagination*/}
             </div>
