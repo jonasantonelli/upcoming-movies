@@ -2,9 +2,11 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-import * as actions from '../actions/upcoming';
-import UpcomingList from '../components/Upcoming/List.jsx';
-import Search from '../components/Upcoming/Search.jsx';
+import * as actions from '../../actions/upcoming';
+import UpcomingList from '../../components/List/List.jsx';
+import Search from '../../components/Search/Search.jsx';
+
+import './style.scss';
 
 function debounced(fn, delay) {
     let timerId;

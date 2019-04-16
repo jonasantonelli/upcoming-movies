@@ -1,0 +1,56 @@
+@import "../../ui/variables";
+
+.movie {
+    padding: 50px;
+    display: flex;
+    //position: relative;
+
+    .close {
+        opacity: .3;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        will-change: opacity;
+        transition: opacity 200ms $transition-timing-function;
+        
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &__poster {
+        width: 50%;
+        overflow: hidden;
+        margin-right: 20px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__details {
+        color: $text-color;
+        width: 50%;
+        font-size: 14px;
+    }
+
+    &__name {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    &__overview {
+        color: transparentize($text-color, .55);
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    &__genre {
+        margin-bottom: 3px;
+
+    }
+
+    time {
+        font-style: italic;
+    }
+}

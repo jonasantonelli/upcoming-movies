@@ -1,0 +1,37 @@
+@import "../../ui/variables";
+
+.search {
+    width: 100%;
+    display: flex;
+    position: relative;
+
+    &__input {
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+        margin: 20px;
+        border: none;
+        color: $text-color;
+        background: #000;
+        font-size: 16px;
+        padding: 15px 40px 15px 15px;
+    }
+
+    button {
+        background-color: transparent;
+        background-position: center;
+        background-image: url('./clear.svg');
+        text-indent: -9999px;
+        background-size: 30px;
+        opacity: .3;
+        position: absolute;
+        border: none;
+        right: 17px;
+        top: 22px;
+        width: 45px;
+        height: 45px;
+        background-repeat: no-repeat;
+    }
+}

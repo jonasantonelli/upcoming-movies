@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './style.scss';
 
 class Search extends React.PureComponent {
     constructor(props) {
@@ -18,9 +19,7 @@ class Search extends React.PureComponent {
         const { onChange } = this.props;
         return (
             <div className="search">
-                <div className="search__input">
-                    <input onKeyPress={onChange} type="text" ref={this.search} onChange={onChange} placeholder="Titles" name="search"/>
-                </div>
+                <input autoComplete="off" onKeyPress={onChange} type="text" ref={this.search} onChange={onChange} placeholder="Titles" name="search"/>
                 <button type="button" onClick={this.handleCleaning}>Clean</button>
             </div>
         );

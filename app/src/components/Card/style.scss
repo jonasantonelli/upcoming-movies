@@ -1,0 +1,58 @@
+@import "../../ui/variables";
+.card {
+    overflow: hidden;
+    background-color: #000;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    transition-property: box-shadow;
+    transition-duration: 300ms;
+    transition-timing-function: $transition-timing-function;
+    will-change: box-shadow;
+
+    &:hover {
+        box-shadow: 0 0 30px 6px rgba(0,0,0,.4);
+
+        img {
+            transform: scale3d(1.05, 1.05, 1.05);
+        }
+    }
+
+    img {
+        transition-property: transform;
+        transition-duration: 300ms;
+        transition-timing-function: cubic-bezier(0.465, 0.183, 0.153, 0.946);
+        will-change: transform;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    &__info {
+        z-index: 10;
+        bottom: 0;
+        width: calc(100% - 14px);
+        height: 60px;
+        background-color: rgba(0,0,0,.85);
+        color: $text-color;
+        font-size: 10px;
+        padding: 7px;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+    }
+
+    &__title {
+        font-size: 13px;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    &__release {
+        font-style: italic;
+    }
+}

@@ -1,0 +1,24 @@
+@import "../../ui/variables";
+
+.upcoming-list {
+    padding: 0 20px 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+
+
+@media screen and (min-device-width: $tablet-min-width) {
+    .upcoming-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media screen and (min-device-width: $desktop-min-width) {
+    .upcoming-list {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}

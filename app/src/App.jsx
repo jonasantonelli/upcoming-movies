@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Route, Switch, Redirect, withRouter } from 'react-router-dom';
 
-import Upcoming from './containers/Upcoming.jsx';
-import Details from './containers/Details.jsx';
+import Upcoming from './containers/Upcoming/Upcoming.jsx';
+import Details from './containers/Details/Details.jsx';
 import NotFound from './containers/NotFound.jsx';
 
-import './App.css';
+import './App.scss';
 
 const ROUTES = {
     UPCOMING: '/upcoming',

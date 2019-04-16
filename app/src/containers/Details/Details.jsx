@@ -1,7 +1,8 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import {connect} from "react-redux";
-import * as actions from '../actions/details';
+import * as actions from '../../actions/details';
+import Movie from '../../components/Movie/Movie.jsx';
 
 class Details extends React.Component {
 
@@ -16,20 +17,8 @@ class Details extends React.Component {
             return <div>Loading...</div>
         }
 
-        const poster = movie.poster
-            ? <img src={window.IMAGE_URL + movie.poster} alt={movie.name} />
-            : null;
-
         return (
-            <div className="movie">
-                <div className="movie__poster">
-                    { poster }
-                </div>
-                <div className="movie__name">{ movie.name}</div>
-                <div className="movie__overview">{ movie.overview }</div>
-                <div className="movie__release">{ movie.release }</div>
-                Details { movie.name }
-            </div>
+            <Movie data={movie} />
         )
     }
 }
