@@ -11,35 +11,38 @@ const error = ({
     type: ERROR
 });
 
-const fetchComplete = (data) => {
+const fetchComplete = (data, page = 1, search = '') => {
     return {
         type: FETCH_COMPLETE,
-        payload: data
+        payload: data,
+        page,
+        search
     }
 };
 
-export const fetchingUpcoming = () => (dispatch) => {
+export const fetchingUpcoming = (page) => (dispatch) => {
     dispatch(fetching);
 
-    Upcoming.get().then((response) => {
+    Upcoming.get(page).then((response) => {
 
         if(!response) {
             dispatch(error);
             return;
         }
-        dispatch(fetchComplete(response));
+
+        dispatch(fetchComplete(response, page));
     }).catch(() => dispatch(error));
 };
 
-export const fetchSearch = (title) => (dispatch) => {
+export const fetchSearch = (title, page) => (dispatch) => {
 
     dispatch(fetching);
 
-    Upcoming.search(title).then((response) => {
+    Upcoming.search(title, page).then((response) => {
         if(!response) {
             dispatch(error);
             return;
         }
-        dispatch(fetchComplete(response));
+        dispatch(fetchComplete(response, page, title));
     }).catch(() => dispatch(error));
 };

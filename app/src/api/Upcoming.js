@@ -3,9 +3,9 @@ const UPCOMING_URL = 'api/v1/movies/upcoming';
 const SEARCH_URL = 'api/v1/movies';
 
 class UpcomingService {
-    get() {
+    get(page = 1) {
         return new Promise((resolve, reject) => {
-            fetch(`${window.API_URL}${UPCOMING_URL}`, {
+            fetch(`${window.API_URL}${UPCOMING_URL}?page=${page}`, {
                 method: 'GET',
             }).then((res) => {
                 if(!res.ok){
@@ -27,9 +27,9 @@ class UpcomingService {
         });
     }
 
-    search(title = '') {
+    search(title = '', page = 1) {
         return new Promise((resolve, reject) => {
-            fetch(`${window.API_URL}${SEARCH_URL}?query=${title}`, {
+            fetch(`${window.API_URL}${SEARCH_URL}?query=${title}&page=${page}`, {
                 method: 'GET',
             }).then((res) => {
                 if(!res.ok){
