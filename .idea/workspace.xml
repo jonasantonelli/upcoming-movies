@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="074d406d-17e1-47f7-a44f-adbea967ebab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entrypoint.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/app/Http/Middleware/CorsMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Middleware/CorsMiddleware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/app/Services/MoviesService.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Services/MoviesService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/bootstrap/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/bootstrap/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/api/Details.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/api/Details.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/api/Upcoming.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/api/Upcoming.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="074d406d-17e1-47f7-a44f-adbea967ebab" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +40,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
@@ -68,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build/index.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/.env">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="184" lean-forward="true" selection-start-column="184" selection-end-column="184" />
+              <caret column="12" selection-start-column="12" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -153,7 +137,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/components/Upcoming/List.js" />
         <option value="$PROJECT_DIR$/app/src/components/Upcoming/Card.js" />
         <option value="$PROJECT_DIR$/app/src/components/Upcoming/List.jsx" />
         <option value="$PROJECT_DIR$/app/src/components/Upcoming/Search.js" />
@@ -204,6 +187,7 @@
         <option value="$PROJECT_DIR$/app/public/index.html" />
         <option value="$PROJECT_DIR$/app/build/index.html" />
         <option value="$PROJECT_DIR$/app/package.json" />
+        <option value="$PROJECT_DIR$/api/.env" />
       </list>
     </option>
   </component>
@@ -319,13 +303,7 @@
             <path>
               <item name="upcoming-movies" type="b2602c69:ProjectViewProjectNode" />
               <item name="upcoming-movies" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="upcoming-movies" type="b2602c69:ProjectViewProjectNode" />
-              <item name="upcoming-movies" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -385,12 +363,12 @@
       <workItem from="1555249265570" duration="727000" />
       <workItem from="1555366358078" duration="2135000" />
       <workItem from="1555369401345" duration="26665000" />
-      <workItem from="1555464001572" duration="2518000" />
+      <workItem from="1555464001572" duration="2708000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32045000" />
+    <option name="totallyTimeSpent" value="32235000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -442,16 +420,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/app/Http/Middleware/CorsMiddleware.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding>
-            <element signature="e#99#278#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/bootstrap/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -822,7 +790,7 @@
     <entry file="file://$PROJECT_DIR$/app/build/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="184" lean-forward="true" selection-start-column="184" selection-end-column="184" />
+          <caret column="246" lean-forward="true" selection-start-column="246" selection-end-column="246" />
         </state>
       </provider>
     </entry>
@@ -833,6 +801,13 @@
           <folding>
             <element signature="n#!!block;n#dependencies#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
         </state>
       </provider>
     </entry>
