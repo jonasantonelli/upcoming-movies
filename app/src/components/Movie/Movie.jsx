@@ -4,8 +4,7 @@ import './style.scss';
 
 const IMAGE_URL = 'https://image.tmdb.org/t/p/original/';
 
-
-export default ({data}) => {
+export default ({data, isLoading}) => {
 
     if(!data) {
         return;

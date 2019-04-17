@@ -8,7 +8,7 @@ import App from './App.jsx';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
-window.API_URL = 'http://localhost/api/v1';
+window.API_URL = 'http://localhost:5150/api/v1';
 
 ReactDOM.render(
         <Provider store={store}>

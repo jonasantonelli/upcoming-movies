@@ -44,7 +44,7 @@ class MoviesService
             $cacheContent = CacheFacade::get($cacheKey);
 
             if(!empty($cacheContent)) {
-                $result = json_decode($cacheContent);
+                $result = json_decode($cacheContent, true);
                 return $result;
             }
 
@@ -112,7 +112,7 @@ class MoviesService
             $cacheContent = CacheFacade::get($cacheKey);
 
             if(!empty($cacheContent)) {
-                $result = json_decode($cacheContent);
+                $result = json_decode($cacheContent, true);
                 return $result;
             }
 

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { NavLink } from 'react-router-dom';
 import './style.scss';
 
-const IMAGE_URL = 'https://image.tmdb.org/t/p/w200';
+const IMAGE_URL = 'https://image.tmdb.org/t/p/w300';
 
 const Card = ({id, poster, genre, name, release}) => {
 

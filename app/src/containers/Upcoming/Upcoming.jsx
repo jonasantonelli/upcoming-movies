@@ -37,6 +37,7 @@ class Upcoming extends React.Component {
 
     handleSearchChange(text) {
         if(!text) {
+            this.props.fetching();
             return;
         }
         this.props.search(text);
@@ -82,16 +83,18 @@ class Upcoming extends React.Component {
                     onChange={(e) => this.handleSearchChange(e.target.value)}
                     onCleaning={() => this.props.fetching()}
                 />
-                { isLoading
-                    ? <Loading />
-                    : <UpcomingList data={result} />
+                {
+                    isLoading ? <Loading/> :
+                        <React.Fragment>
+                            <UpcomingList data={result}/>
+                            <Paginate
+                                onNext={this.handleNextPage}
+                                onPrevious={this.handlePreviousPage}
+                                currentPage={page}
+                                totalPages={totalPages}
+                            />
+                        </React.Fragment>
                 }
-                <Paginate
-                    onNext={this.handleNextPage}
-                    onPrevious={this.handlePreviousPage}
-                    currentPage={page}
-                    totalPages={totalPages}
-                />
             </div>
         )
     }

@@ -2,6 +2,7 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import {connect} from "react-redux";
 import * as actions from '../../actions/details';
+import Loading from '../../components/Loading/Loading.jsx';
 import Movie from '../../components/Movie/Movie.jsx';
 
 class Details extends React.Component {
@@ -14,7 +15,7 @@ class Details extends React.Component {
         const { movie, isLoading } = this.props;
 
         if(isLoading) {
-            return <div>Loading...</div>
+            return <Loading />;
         }
 
         return (
