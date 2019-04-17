@@ -1,5 +1,5 @@
 
-const DETAILS_URL = 'api/v1/movies/';
+const DETAILS_URL = '/movies/';
 
 class DetailsService {
     get(id) {

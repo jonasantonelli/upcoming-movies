@@ -71,7 +71,7 @@ class MoviesService
                 $genres = [];
                 foreach($genreIds as $id)
                 {
-                    array_push($genres, $this->genreList->{$id});
+                    array_push($genres, $this->genreList[$id]);
                 }
                 $item->genre = $genres;
                 $item->release = $movie->release_date;

@@ -1,6 +1,6 @@
 
-const UPCOMING_URL = 'api/v1/movies/upcoming';
-const SEARCH_URL = 'api/v1/movies';
+const UPCOMING_URL = '/movies/upcoming';
+const SEARCH_URL = '/movies';
 
 class UpcomingService {
     get(page = 1) {
