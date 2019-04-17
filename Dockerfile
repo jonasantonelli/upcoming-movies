@@ -13,7 +13,7 @@ EXPOSE 80
 ENTRYPOINT ["/etc/entrypoint.sh"]
 
 #to build it
-#docker build -t upcomingmovies:1 .
+#docker build -t upcoming-movies:1 .
 
 #to run
-#docker run --rm -p 80:80 upcomingmovies:1 
+#docker run --rm -p 80:80 upcoming-movies:1
