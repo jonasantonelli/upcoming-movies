@@ -1,5 +1,5 @@
 # Upcoming Movies Web App
-This is a MVP project to list upcoming movies integrates with [The Movie Database](https://themoviedb.org).
+This is a MVP project to list upcoming movies integrated with [The Movie Database](https://themoviedb.org).
 
 # Libraries and frameworks used!
   - [ReactJS](https://reactjs.org/)
@@ -10,8 +10,8 @@ This is a MVP project to list upcoming movies integrates with [The Movie Databas
  
 # Architecture
 This solution was split into Front and Backend.
-The **business layer** was made using *Lumen* and *MVC* architecture to be able to separate the responsabilities, once it was necessary to abstract the access to the data, as they are being provided by **TMDb API**. To get the data it was used *Guzzle PHP Http Client*.
-In order to improve the User Experience it was used caching techniques to don't overload the *TMDb Service.*
+The **business layer** was made using *Lumen* and *MVC* architecture to be able to separate the responsabilities, once it was necessary to abstract the access to the data, as they are being provided by **TMDb API**. *Guzzle PHP Http Client* was used to get the data.
+In order to improve the User Experience and do not overload the *TMDb Service*, caching techniques were applied.
 
 The **presentation layer** was made using *ReactJS* and *Redux* to be able to better manage the application state. It was used *React Router* to manage the routes and navigation experience in app.
 
@@ -48,7 +48,7 @@ $ npm run build
 ```
 
 ### Using Docker
-Upcoming Movies is available in Docker Hub.
+Upcoming Movies Web App is available in Docker Hub.
 
 This will get the image:
 ```sh
