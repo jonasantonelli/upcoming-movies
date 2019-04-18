@@ -1,5 +1,5 @@
 # Upcoming Movies Web App
-This is a MVP project to list upcoming movies integrate with [The Movie Database](http://breakdance.io).
+This is a MVP project to list upcoming movies integrate with [The Movie Database](https://themoviedb.org).
 
 # Libraries used!
   - [ReactJS](https://reactjs.org/)
