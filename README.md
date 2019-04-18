@@ -68,7 +68,6 @@ http://localhost
 ### Todos
  - Write Tests
  - Apply Page transition animation
- - Nginx 
 
 License
 ----
