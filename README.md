@@ -1,7 +1,7 @@
 # Upcoming Movies Web App
-This is a MVP project to list upcoming movies integrate with [The Movie Database](https://themoviedb.org).
+This is a MVP project to list upcoming movies integrates with [The Movie Database](https://themoviedb.org).
 
-# Libraries used!
+# Libraries and frameworks used!
   - [ReactJS](https://reactjs.org/)
     * [Create React App](https://github.com/facebook/create-react-app)
   - [Redux](https://redux.js.org/)
@@ -10,14 +10,14 @@ This is a MVP project to list upcoming movies integrate with [The Movie Database
  
 # Architecture
 This solution was split into Front and Backend.
-The **business layer** was made using *Lumen* and *MVC* architecture to be able to separate the responsabilities, once it was necessary to abstract the access to the data, as they are being provided by **TMDb**. To get the data was used *Guzzle PHP Http Client*.
-In order to improve the User Experience was used caching techniques to not overload the *TMDb Service.*
+The **business layer** was made using *Lumen* and *MVC* architecture to be able to separate the responsabilities, once it was necessary to abstract the access to the data, as they are being provided by **TMDb API**. To get the data it was used *Guzzle PHP Http Client*.
+In order to improve the User Experience it was used caching techniques to don't overload the *TMDb Service.*
 
 The **presentation layer** was made using *ReactJS* and *Redux* to be able to better manage the application state. It was used *React Router* to manage the routes and navigation experience in app.
 
 ### Installing
 
-**API** requirements is here: https://lumen.laravel.com/docs
+**API** requirements are here: https://lumen.laravel.com/docs
 ```sh
 $ cd api
 $ php -S localhost:5150 -t public
