@@ -58,7 +58,7 @@ class GenresService
         }
         catch (\Exception $err)
         {
-            dd($err);
+            error_log($err);
         }
 
     }

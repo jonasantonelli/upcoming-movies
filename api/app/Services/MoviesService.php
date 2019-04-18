@@ -89,7 +89,7 @@ class MoviesService
         }
         catch (\Exception $err)
         {
-            dd($err);
+            error_log($err);
         }
     }
 
@@ -140,7 +140,7 @@ class MoviesService
         }
         catch (\Exception $err)
         {
-            dd($err);
+            error_log($err);
         }
 
     }
@@ -196,7 +196,7 @@ class MoviesService
         }
         catch (\Exception $err)
         {
-            dd($err);
+            error_log($err);
         }
 
     }
