@@ -75,3 +75,4 @@ License
 MIT
 
 **Free Software, Hell Yeah!**
+*Curiosity: 5150 is the seventh studio album by American hard rock band Van Halen
