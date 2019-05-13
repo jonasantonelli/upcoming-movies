@@ -1,0 +1,74 @@
+@import "../../ui/variables";
+
+.movie {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-device-width: $tablet-min-width) {
+        flex-direction: row;
+    }
+
+    .close {
+        opacity: .3;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        will-change: opacity;
+        transition: opacity 200ms $transition-timing-function;
+
+        @media screen and (min-device-width: $tablet-min-width) {
+            right: 20px;
+            top: 15px;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &__poster {
+        width: 100%;
+        overflow: hidden;
+        margin: 10px 20px 20px 0;
+
+        @media screen and (min-device-width: $tablet-min-width) {
+            width: 50%;
+            margin: 0px 20px 20px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__details {
+        color: $text-color;
+        width: 100%;
+        font-size: 14px;
+
+        @media screen and (min-device-width: $tablet-min-width) {
+            width: 50%;
+        }
+    }
+
+    &__name {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    &__overview {
+        color: transparentize($text-color, .55);
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    &__genre {
+        margin-bottom: 3px;
+
+    }
+
+    time {
+        font-style: italic;
+    }
+}

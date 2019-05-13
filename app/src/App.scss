@@ -1,0 +1,13 @@
+@import "ui/variables";
+
+$bg-color: #171717;
+
+body,
+main {
+    background: $bg-color;
+}
+
+main {
+    max-width: $wide-min-width;
+    margin: auto;
+}
